@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Filmes e Séries</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div class="container">
+       
+
         <h1>Cadastro de Filmes e Séries</h1>
+        <nav>
+            <a href="index.html" id="btCadastro">Cadastro</a> | 
+            <a href="filmes.html" id="Filmescadastrado">Filmes Cadastrados</a>
+        </nav>
         <form id="registrationForm">
+            <!-- Campos do formulário aqui -->
             <div class="form-group">
                 <label for="nameBrazil">Nome do filme no Brasil:</label>
                 <input type="text" id="nameBrazil" name="nameBrazil" required>
@@ -108,8 +115,9 @@
             <button type="submit" id="submitButton" disabled>Cadastro</button>
         </form>
     </div>
-    <script src="./src/js/index.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
+
 
 

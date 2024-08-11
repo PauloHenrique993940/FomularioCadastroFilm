@@ -1,35 +1,28 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 .container {
-    background: white;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    flex-direction: column;
-    display: flex;
 }
 
 h1 {
-    margin-bottom: 20px;
     text-align: center;
-    margin: 0;
 }
 
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
 }
@@ -39,42 +32,81 @@ input[type="date"],
 select {
     width: 100%;
     padding: 8px;
-    margin-bottom: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.invalid {
+    border-color: red;
 }
 
 .error-message {
     color: red;
-    font-size: 0.875em;
-    display: none;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
-input:invalid,
-select:invalid {
-    border-color: red;
+.movie-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-input:invalid + .error-message,
-select:invalid + .error-message {
-    display: block;
+nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
 }
 
-button:enabled {
+nav a:hover {
+    text-decoration: underline;
+}
+#btCadastro{
     background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 300px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#Filmescadastrado{
+    width: 500px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #061525;
+}
+
+
+#moviesList{
+    background-color: #194f8a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 12px;
 }
